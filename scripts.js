@@ -11,6 +11,13 @@ function relogio() {
     horas.textContent = x.getHours()
     minutos.textContent = x.getMinutes()
     seconds.textContent = x.getSeconds()
+
+    if(horas >= 12) {
+        data.textContent = "PM"
+    } else {
+        data.textContent = "AM"
+        data.style.backgroundColor = "Orange"
+    }
 }
 
 relogio()
