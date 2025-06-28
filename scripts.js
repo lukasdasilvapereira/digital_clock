@@ -14,7 +14,7 @@ function relogio() {
 
     if(horas >= 12) {
         data.textContent = "PM"
-    } else {
+    } else if(horas <= 12) {
         data.textContent = "AM"
         data.style.backgroundColor = "Orange"
     }
